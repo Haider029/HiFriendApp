@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+
+    <Button
+        android:id="@+id/buttonLocation"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Get Location"
+        android:textAllCaps="false"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Welcome to Your Profile"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/locationMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Your Location"
+        android:layout_margin="100dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+    android:id="@+id/buttonLogout"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/buttonLocation"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:background="@color/colorPrimary"
+    android:text="Logout"
+    android:textAllCaps="false"
+    android:textColor="#ffffff" />
+    <Button
+        android:id="@+id/buttonSendNotification"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Notification"
+        android:textAllCaps="false"
+        android:textColor="#ffffff" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:id="@+id/etTitle"
+        />
+     <EditText
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="Message"
+         android:layout_below="@id/etTitle"
+         android:id="@+id/etMessage"/>
+
+
+</RelativeLayout>
